@@ -1,0 +1,31 @@
+@import "../mixins.scss";
+
+.site-footer {
+	@include container;
+	text-align: center;
+	margin-top: 30px;
+	background-color: #f1f1f1;
+}
+
+.site-footer__academy-reference {
+	padding: 20px 0;
+	border-top: 1px solid #e5e5e5;
+}
+
+.site-footer__academy-reference > span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+	font-size: 19px;
+	line-height: 19px;
+	font-weight: 700;
+	color: #000;
+}
+
+.site-footer__academy-reference > a {
+	display: inline-block;
+	vertical-align: middle;
+	height: 35px;
+	width: 30px;
+	background-color: blue;
+}

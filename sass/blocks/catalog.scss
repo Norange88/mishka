@@ -1,0 +1,78 @@
+@import "../mixins.scss";
+
+.catalog {
+	@include container;
+	padding-bottom: 30px;
+}
+
+.catalog__item {
+	display: block;
+	margin-top: 20px;
+
+	&--video {
+		text-align: left;
+		border: 1px solid #ececec;
+	}
+}
+
+.catalog__item-img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.catalog__item-description {
+	text-align: left;
+	padding: 25px;
+	border: 1px solid #ececec;
+}
+
+.catalog__item-name {
+	padding-right: 10px;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000;
+}
+
+.catalog__item-properties {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+.catalog__item-price {
+	padding-top: 25px;
+	font-weight: 700;
+	color: #000;
+	border-top: 1px solid #ececec;
+}
+
+.catalog__video-header {
+	padding: 25px 35px 25px 85px;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+	background: url(../img/camera.svg) no-repeat left 30px top 30px;
+	background-size: 35px 30px;
+}
+
+.catalog__video-wrapper {
+	display: block;
+	height: 150px;
+	margin: 0 -1px;
+	background: url(../img/video-mobile.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+.catalog__video-footer {
+	padding: 30px;
+}
+
+.catalog__video-footer > p {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.catalog__order-btn {
+	margin-top: 30px;
+}

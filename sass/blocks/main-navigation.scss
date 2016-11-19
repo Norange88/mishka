@@ -1,0 +1,74 @@
+@import "../mixins.scss";
+
+.main-navigation {
+	
+}
+
+.main-navigation li {
+	@include container;
+	border-top: 1px solid #ececec;
+}
+
+.main-navigation__mobile-panel {
+	position: relative;
+	height: 79px;
+}
+
+.main-navigation__logo {
+	margin: 18px auto 0 auto;
+}
+
+.main-navigation__mobile-btn {
+	position: absolute;
+	right: 26px;
+	top: 23px;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	cursor: pointer;
+
+	&::before {
+		position: absolute;
+		top: 13px;
+		left: 0;
+		display: block;
+		width: 30px;
+		height: 3px;
+		content: "";
+		background-color: #221f1f;
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		position: absolute;
+		top: 13px;
+		left: 0;
+		display: block;
+		width: 30px;
+		height: 3px;
+		content: "";
+		background-color: #221f1f;
+		transform: rotate(-45deg);
+	}
+}
+
+.main-navigation__link {
+	display: block;
+	text-align: left;
+	height: 78px;
+	padding-left: 45px;
+	font-size: 17px;
+	line-height: 78px;
+	font-weight: 700;
+	color: #000;
+
+	&--search {
+		background: url(../img/search.svg) no-repeat left 3px center;
+		background-size: 18px 18px;
+	}
+
+	&--cart {
+		background: url(../img/cart.svg) no-repeat left 3px center;
+		background-size: 18px 18px;
+	}
+}

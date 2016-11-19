@@ -1,0 +1,53 @@
+@import "../mixins.scss";
+
+.about-us {
+	text-align: left;
+	padding-top: 15px;
+	background: url(../img/wavy-line.svg) repeat-x top left;
+	background-size: auto 7px;
+}
+
+.about-us__headline {
+	font-size: 25px;
+	font-weight: 700;
+}
+
+.about-us__item {
+	margin-top: 20px;
+	padding-top: 45px;
+
+	&--materials {
+		background: url(../img/flower.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+
+	&--price {
+		background: url(../img/dollar.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+
+	&--likes {
+		background: url(../img/heart.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+
+	&--love {
+		background: url(../img/ball.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+
+	&--support {
+		background: url(../img/rocket.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+
+	&--gift {
+		background: url(../img/gift.svg) no-repeat top left;
+		background-size: 48px 36px;
+	}
+}
+
+.about-us__item > p {
+	font-size: 17px;
+	font-weight: 700;
+}

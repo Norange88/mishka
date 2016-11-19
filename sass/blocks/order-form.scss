@@ -1,0 +1,95 @@
+@import "../mixins.scss";
+
+.order-form {
+	@include container;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.order-form__intro {
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.order-form > fieldset {
+	position: relative;
+	margin-top: 20px;
+	border-top: 1px solid #62d1ba;
+}
+
+.order-form__fieldset-headline {
+	position: absolute;
+	text-align: left;
+	top: -12px;
+	left: 0;
+	width: 60px;
+	height: 20px;
+	font-size: 17px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #62d1ba;
+	background-color: #fff;
+}
+
+.order-form__order-type {
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.order-form__order-type > label,
+.order-form__order-color > label {
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	font-size: 17px;
+	line-height: 18px;
+	color: #000;
+	font-weight: 700;
+}
+
+.order-form__order-type input,
+.order-form__order-color input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.order-form__order-type-bg {
+	display: inline-block;
+	vertical-align: top;
+	width: 44px;
+	height: 44px;
+	margin-right: 20px;
+	border: 2px solid #444444;
+	border-radius: 50%;
+}
+
+.order-form__order-type-name {
+	display: inline-block;
+	vertical-align: bottom;
+	width: 70%;
+}
+
+.order-form__order-color-name {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70%;
+}
+
+.order-form__circle-bg,
+.order-form__tick-bg {
+	visibility: hidden;
+}
+
+input[type="radio"]:checked + svg .order-form__circle-bg,
+input[type="checkbox"]:checked + svg .order-form__tick-bg {
+	visibility: visible;
+}
+
+.order-form__order-color-bg {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	border: 2px solid #000;
+}

@@ -1,0 +1,20 @@
+body {
+	text-align: center;
+	font-family: "OpenSans", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+	background-color: #fff;
+	padding-bottom: 200px;
+}
+
+@media (min-width: 1200px) {
+
+	body {
+		width: 1200px;
+		margin: 0 auto;
+		box-shadow: 0 0 11px 0 #ccc;
+	}
+}
+

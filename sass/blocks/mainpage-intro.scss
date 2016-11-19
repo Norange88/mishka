@@ -1,0 +1,41 @@
+@import "../mixins.scss";
+
+.mainpage-intro > div{
+	@include container;
+}
+
+.mainpage-intro__large-item {
+	padding-top: 70px;
+	padding-bottom: 110px;
+	background: url(../img/hero-mobile.jpg) no-repeat center top -20px;
+}
+
+.mainpage-intro__large-item h1 {
+	font-size: 27px;
+	font-weight: 700;
+	color: #010000;
+}
+
+.mainpage-intro__item {
+	padding-top: 25px;
+	padding-bottom: 30px;
+
+	&--interior {
+		background: #63d1bb url(../img/lamp.svg) no-repeat center right 35px;
+		background-size: 45px 65px;
+	}
+
+	&--toys {
+		background: #56c3b2 url(../img/toy.svg) no-repeat center right 25px;
+		background-size: 65px 65px;
+	}
+}
+
+.mainpage-intro__item > p {
+	width: 50%;
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #fff;
+}
+

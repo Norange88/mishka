@@ -1,0 +1,13 @@
+@import "../mixins.scss";
+
+.page-intro {
+	@include container;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	font-family: Verdana, Arial, Sans-serif;
+	font-size: 27px;
+	font-weight: 700;
+	color: #000;
+	background-color: #f1f1f1;
+}
+

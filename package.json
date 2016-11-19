@@ -1,0 +1,42 @@
+{
+	"name": "MIshka",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Сайт для портфолио",
+	"author": "Никита Гречишников",
+	"homepage": "norange.ru",
+	"devDependencies": {
+	"@htmlacademy/editorconfig-cli": "0.0.7",
+	"autoprefixer": "6.4.1",
+	"css-mqpacker": "^5.0.1",
+	"grunt": "1.0.1",
+	"grunt-browser-sync": "2.2.0",
+	"grunt-contrib-clean": "^1.0.0",
+	"grunt-contrib-copy": "^1.0.0",
+	"grunt-contrib-imagemin": "^1.0.1",
+	"grunt-contrib-uglify": "^2.0.0",
+	"grunt-contrib-watch": "1.0.0",
+	"grunt-csso": "^2.0.1",
+	"grunt-postcss": "0.8.0",
+	"grunt-sass": "1.2.1",
+	"grunt-svgmin": "^4.0.0",
+	"grunt-svgstore": "^1.0.0",
+	"load-grunt-tasks": "^3.5.2"
+	},
+	"scripts": {
+	"test": "editorconfig-cli",
+	"build": "grunt build",
+	"start": "npm run build"
+	},
+	"editorconfig-cli": [
+	"*.html",
+	"*.json",
+	"*.js",
+	"js/**/*.js",
+	"img/**/*.svg",
+	"sass/**/*.{sass,scss}"
+	],
+	"engines": {
+	"node": "6.5"
+	}
+}

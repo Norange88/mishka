@@ -1,0 +1,45 @@
+@import "../mixins.scss";
+
+.contacts {
+	text-align: left;
+	margin-top: 30px;
+	padding-top: 30px;
+	background: url(../img/wavy-line.svg) repeat-x top left;
+	background-size: auto 7px;
+}
+
+.contacts__headline {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.contacts__item {
+	display: flex;
+	margin-top: 20px;
+}
+
+.contacts__item-name {
+	width: 55px;
+	margin-right: 10px;
+}
+
+.contacts__item-content {
+	flex-grow: 1;
+}
+
+.contacts__item-content > a {
+	display: block;
+	border-bottom: 1px solid #62d1ba;
+}
+
+.contacts__map {
+	height: 460px;
+	margin-top: 20px;
+	background: url(../img/map-pin.svg) no-repeat center top 168px,
+							url(../img/map-tablet.jpg) no-repeat center;
+	background-size: 65px auto, auto 100% 
+}
+
+.contacts-btn {
+	margin: 30px 30px 0 30px;
+}

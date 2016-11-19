@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Mishka</title>
+		<meta name='viewport' content='width=device-width'>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+	</head>
+
+	<body>
+		<header class="site-header">
+			<!-- Навигация -->
+			<section class="main-navigation">
+				<ul class="main-navigation__list">
+					<li class="main-navigation__mobile-panel">
+						<img class="main-navigation__logo" src="img/mishka-logo-mobile.svg" width="90" height="40" alt="logo">
+						<button class="main-navigation__mobile-btn"></button>
+					</li>
+					<li class="main-navigation__list-item">
+						<a class="main-navigation__link" href="#">Каталог товаров</a>
+					</li>
+					<li class="main-navigation__list-item">
+						<a class="main-navigation__link" href="#">Вязание на заказ</a>
+					</li>
+					<li class="main-navigation__list-item">
+						<a class="main-navigation__link main-navigation__link--search" href="#">Поиск по сайту</a>
+					</li>
+					<li class="main-navigation__list-item">
+						<a class="main-navigation__link main-navigation__link--cart" href="#">Корзина: пока пуста</a>
+					</li>
+				</ul>
+			</section>
+			<section class="page-intro">
+				Вязание&nbsp;на&nbsp;заказ
+			</section>
+		</header>
+		<!-- Main -->
+		<main>
+		<form action="handler.php" class="order-form">
+			<p class="order-form__intro">
+				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+			</p>
+			<!-- Радио кнопки -->
+			<fieldset class="order-form__order-type">
+				<h2 class="order-form__fieldset-headline">Тип</h2>
+				<label for="interior">
+					<input id="interior" type="radio" name="order-type" value="interior" checked>
+					<svg class="order-form__order-type-bg">
+						<circle class="order-form__circle-bg" r="9" cx="50%" cy="50%" fill="#62d1ba"></circle>
+					</svg>
+					<p class="order-form__order-type-name">Аксессуар для интерьера</p>
+				</label>
+				<label for="toy">
+					<input id="toy" type="radio" name="order-type" value="toy">
+					<svg class="order-form__order-type-bg">
+						<circle class="order-form__circle-bg" r="9" cx="50%" cy="50%" fill="#62d1ba"></circle>
+					</svg>
+					<p class="order-form__order-type-name">Детская игрушка</p>
+				</label>
+			</fieldset>
+			<!-- Чекбоксы -->
+			<fieldset class="order-form__order-color">
+				<h2 class="order-form__fieldset-headline">Тип</h2>
+				<label for="white">
+					<input id="white" type="checkbox" name="color" value="white" checked>
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">Белый</p>
+				</label>
+				<label for="gray">
+					<input id="gray" type="checkbox" name="color" value="white" checked>
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">Серый</p>
+				</label>
+				<label for="tiffany">
+					<input id="tiffany" type="checkbox" name="color" value="white">
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">«Тиффани»</p>
+				</label>
+				<label for="black">
+					<input id="black" type="checkbox" name="color" value="white">
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">Черный</p>
+				</label>
+				<label for="pink">
+					<input id="pink" type="checkbox" name="color" value="white">
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">Розовый</p>
+				</label>
+				<label for="orange">
+					<input id="orange" type="checkbox" name="color" value="white">
+					<svg class="order-form__order-color-bg">
+						<polyline class="order-form__tick-bg" points="9,19 16,25 29,11" stroke="#000" stroke-width="3" fill="none"></polyline>
+					</svg>
+					<p class="order-form__order-color-name">Оранжевый</p>
+				</label>
+			</fieldset>
+		</form>
+		</main>
+		<!-- Футер -->
+		<footer class="site-footer">
+			<div class="site-footer__social social">
+				<a href="#" class="social__link social__link--instagram"></a>
+				<a href="#" class="social__link social__link--facebook"></a>
+				<a href="#" class="social__link social__link--twitter"></a>
+			</div>
+			<div class="site-footer__academy-reference">
+				<span>Разработано</span>
+				<a href="http://htmlacademy.ru">html</a>
+			</div>
+		</footer>
+	</body>
+</html>

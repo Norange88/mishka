@@ -1,0 +1,25 @@
+
+/* Контейнер */
+@mixin container {
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media (min-width: 768px) {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	@media (min-width: 1200px) {
+		padding-left: 120px;
+		padding-right: 120px;
+	}
+}
+
+/* Clearfix */
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

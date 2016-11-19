@@ -1,0 +1,65 @@
+@import "../mixins.scss";
+
+.featured-merchandise {
+	@include container;
+	text-align: left;
+	padding-bottom: 33px;
+}
+
+.featured-merchandise__headline {
+	margin-top: 15px;
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000;
+}
+
+.featured-merchandise__promo {
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #63d1bb;
+}
+
+.featured-merchandise__about {
+	margin-top: 20px;
+	line-height: 24px;
+}
+
+.featured-merchandise__details {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.featured-merchandise__details td {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ececec;
+}
+
+.featured-merchandise__details-name {
+	width: 36%;
+}
+
+.featured-merchandise__details-value {
+	width: 64%;
+}
+
+.featured-merchandise__photo {
+	display: block;
+	margin-top: 27px;
+	background-color: #f1f1f1;
+}
+
+.featured-merchandise__price {
+	text-align: center;
+	margin-top: 25px;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.featured-merchandise__order-btn {
+	margin-top: 22px;
+}

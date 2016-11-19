@@ -1,0 +1,18 @@
+.container {
+	width: auto;
+	padding: 0 30px;
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+	.container {
+		padding: 0 60px;
+	}
+}
+/* Десктоп */
+@media (min-width: 1200px) {
+	.container {
+		padding: 0 120px;
+	}
+}
+
